@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(217, 217, 238);
+}
+h2{
+    color: rgb(3, 4, 12);
+
+}
+body
+{
+text-align: center;
+
+}
+*{background-origin: padding-box;
+
+}
+form{
+  text-align: center;
+}
+label{
+  text-size-adjust: 35px;}

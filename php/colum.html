@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>colum</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css files/boot.css">
+
+<script>
+  function isEmailValid(email) {
+  if(/^[^@ ]+@[^@ ]+\.[^@ \.]{2,}$/.test(email)) {
+   console.log('email is valid');
+  } else {
+   console.log('email is invalid')
+  }
+ }
+ isEmailValid('abc@11gmail.com'); // email is valid
+ isEmailValid('abc11gmail.com');
+ </script>
+ </head>
+<body>
+
+<div class="container-fluid">
+  <h1>Hello World!</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+    <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+  </div>
+</div>
+<div class="container-fluid">
+    <h1>Hello World!</h1>
+    <p>Resize the browser window to see the effect.</p>
+    <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
+    <div class="row">
+      <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+      <div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
+    </div>
+  </div>
+
+</body>
+</html>

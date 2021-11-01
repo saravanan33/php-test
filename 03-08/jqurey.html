@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+    <head>
+        <title>java script</title>
+        <script src ="jquery.js"> </script>
+            <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+            <script>
+                $(document).ready(function(){
+    
+               
+                // $("h1").hide();
+                // $('h1#heading1').hide();
+                // $("p span").css("color","red");
+                // $("ul#name li:first").css({color:"green"});
+                // $("ul#name li:last").css({color:"brown"});
+                // $("ul#name li:even").css({color:"red"}); 
+                // $("ul#name li:nth-child(3)").css("background-color","yellow");
+                // $("[href]").css('color','red');
+                // // $( ":button ").hide();
+                // // $("*").hide();
+                // $("#bt1").hover(function(){
+                //    // alert("button clicked");
+                //     $('#para1').toggle();
+                //      });
+                // // $("#bt2").on('click',function(){
+                //     alert("button clicked");})
+                //     $("#bt1").on('click',function(){
+                //     $("#para2").toggle();
+                //     });
+                $("#bt2").click(function(e){
+                    console.log(e);
+                });
+            //     $("#bt1").click(function(e){
+            //         // alert(e.currentTarget.id);
+            //         // alert(e.currentTarget.innerHTML);
+            //         alert(e.currentTarget.outerHTML);
+            //         // alert(e.currentTarget.className);
+            // // });
+            $("*").on("mousemove",function(e){
+                $("#space").html("coords: Y:"+e.clientY+"X:"+e.clientX);
+            });
+            // $("input").focus(function(){
+            //     $(this).css("background","pink");
+            // });
+            // $("input").blur(function(){
+            //     $(this).css("background","white");
+            // });
+            $("input").keyup(function(e){
+                console.log(e.target.value);
+            // });
+            // $("select#gender").change(function(e){
+            //     alert(e.target.value);
+            // });
+            // // $("a").attr("target","_blank");
+            // // $("p").wrap("<h1>");
+            // $("p").wrapall("<h1>");
+            $("body").keyup(function(){
+                $(this).css('background-color','green');
+            });    
+        });
+         });
+    </script>       
+        <style>
+            body
+            {
+                font-size:17px;
+                font-family:arial;
+                background: #f4f4f4;
+                line-height: 1.5em;
+            }
+            header{
+                background: #333;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+                border-bottom: 4px #000 solid;
+                margin-bottom: 10px;
+                }
+        </style>
+    </head>
+    <body >
+        <header>
+            <h1>  hi saravana</h1> 
+        </header>
+        <div >  
+            <input type="button" value="click me">
+            <input type="button" value="click here">
+            <button id="bt1">button 1</button>
+            <button id="bt2">button 2</button>
+              <a href="http://google.com">google</a>
+              <a href="http://yahoo.com">yahoo</a>
+              </div>
+              <form id="form">
+                  name:<input id="name" type="text">
+                  email:<input id="email" type="email">
+
+                  GENDER:<select name="gender" id="gender">
+                      <option value="male">male</option>
+                              <option value="female">female</option>
+                  </select>
+              </form>
+        <div id="container">
+            <h1 id="heading1">heading 1</h1>
+            <p id ="para1">Lorem Ipsum is simply dummy text of
+                 the printing and typesetting industry. 
+                <span>Lorem Ipsum has been the industry's standard dummy
+                 t ever since the 1500s, when an unknown printer 
+                 took a galley of type and scrambled it to make a 
+                 type specimen book.</span>  It has survived not only five 
+                 centuries, but also the leap into electronic 
+                 typesetting, remaining essentially unchanged. 
+                 It was popularised in the 1960s with the release 
+                 of Letraset sheets containing Lorem Ipsum passages, 
+                 and more recently with desktop publishing software 
+                 like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <h1 id="heading2">heading 1</h1>
+            <p id ="para2">Lorem Ipsum is simply dummy text of
+                 the printing and typesetting industry. 
+                 <span>Lorem Ipsum has been the industry's standard dummy
+                 t ever since the 1500s, when an unknown printer 
+                 took a galley of type and scrambled it to make a 
+                 type specimen book. It has survived not2      
+        <ul id="name">
+            <li>list item </li>
+            <li>list item </li>
+            <li>list item </li>
+            <li>list item </li>
+            <li>list item </li>
+            <li>list item </li>
+            <li>list item </li></ul>
+            <span id="space"></span>
+        </body> 
+            
